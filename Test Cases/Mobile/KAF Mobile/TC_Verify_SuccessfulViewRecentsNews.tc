@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC_Verify_SuccessfulViewRecentsNews</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>42a91152-3d99-4cd4-8275-338e39b44f95</testCaseGuid>
+</TestCaseEntity>
