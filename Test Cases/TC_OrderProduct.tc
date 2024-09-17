@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>TC_iOS_SauceLab</name>
+   <name>TC_OrderProduct</name>
    <tag></tag>
    <comment></comment>
    <recordOption>TESTCLOUD_NATIVE_MOBILE</recordOption>
-   <testCaseGuid>1baae654-ec8c-46fe-8b32-03ad8a15949f</testCaseGuid>
+   <testCaseGuid>d2cb620d-54da-46a9-99ca-93b764711fd3</testCaseGuid>
 </TestCaseEntity>
