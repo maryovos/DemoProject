@@ -17,29 +17,18 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-'Open Browser'
-WebUI.openBrowser('')
+Mobile.startApplication('8a5194e5-36a8-4288-a531-9a7e3a7764f3', true)
 
-'Navigate to URL'
-WebUI.navigateToUrl(GlobalVariable.url_login)
+Mobile.tap(findTestObject('Object Repository/iOS_SauceLab/Sauce Labs Backpack'), 0)
 
-WebUI.verifyElementPresent(findTestObject('Website/Login/verify_loginPage'), 5)
+Mobile.tap(findTestObject('Object Repository/iOS_SauceLab/Add To Cart button'), 0)
 
-WebUI.takeScreenshotAsCheckpoint('Sebelum Input Username dan Password', FailureHandling.STOP_ON_FAILURE)
+Mobile.tap(findTestObject('Object Repository/iOS_SauceLab/XCUIElementTypeButton - tab bar option cart'), 0)
 
-WebUI.setText(findTestObject('Website/Login/txt_username'), GlobalVariable.username_web)
+Mobile.tap(findTestObject('Object Repository/iOS_SauceLab/XCUIElementTypeOther - Proceed To Checkout button'), 0)
 
-WebUI.setText(findTestObject('Website/Login/txt_password'), GlobalVariable.password_web)
+Mobile.setText(findTestObject('Object Repository/iOS_SauceLab/XCUIElementTypeTextField - Username input field'), 'bob@example.com', 
+    0)
 
-WebUI.delay(2, FailureHandling.STOP_ON_FAILURE)
-
-WebUI.takeScreenshotAsCheckpoint('Sesudah Input Username dan Password', FailureHandling.STOP_ON_FAILURE)
-
-WebUI.click(findTestObject('Website/Login/btn_login'))
-
-WebUI.verifyElementPresent(findTestObject('Website/Login/verify_loginSuccess'), 10)
-
-WebUI.delay(2, FailureHandling.STOP_ON_FAILURE)
-
-WebUI.takeScreenshotAsCheckpoint('Berhasil Login', FailureHandling.STOP_ON_FAILURE)
+Mobile.closeApplication()
 

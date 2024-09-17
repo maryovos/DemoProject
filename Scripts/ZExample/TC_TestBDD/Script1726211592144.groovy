@@ -17,29 +17,5 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-'Open Browser'
-WebUI.openBrowser('')
-
-'Navigate to URL'
-WebUI.navigateToUrl(GlobalVariable.url_login)
-
-WebUI.verifyElementPresent(findTestObject('Website/Login/verify_loginPage'), 5)
-
-WebUI.takeScreenshotAsCheckpoint('Sebelum Input Username dan Password', FailureHandling.STOP_ON_FAILURE)
-
-WebUI.setText(findTestObject('Website/Login/txt_username'), GlobalVariable.username_web)
-
-WebUI.setText(findTestObject('Website/Login/txt_password'), GlobalVariable.password_web)
-
-WebUI.delay(2, FailureHandling.STOP_ON_FAILURE)
-
-WebUI.takeScreenshotAsCheckpoint('Sesudah Input Username dan Password', FailureHandling.STOP_ON_FAILURE)
-
-WebUI.click(findTestObject('Website/Login/btn_login'))
-
-WebUI.verifyElementPresent(findTestObject('Website/Login/verify_loginSuccess'), 10)
-
-WebUI.delay(2, FailureHandling.STOP_ON_FAILURE)
-
-WebUI.takeScreenshotAsCheckpoint('Berhasil Login', FailureHandling.STOP_ON_FAILURE)
+CucumberKW.runFeatureFile('Include/features/Login.feature')
 

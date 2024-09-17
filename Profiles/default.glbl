@@ -39,4 +39,14 @@
       <initValue>'admin123'</initValue>
       <name>password_web</name>
    </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>''</initValue>
+      <name>bearer</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>''</initValue>
+      <name>searhKeyword</name>
+   </GlobalVariableEntity>
 </GlobalVariableEntities>

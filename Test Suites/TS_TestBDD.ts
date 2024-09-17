@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestSuiteEntity>
    <description></description>
-   <name>TS_WebLoginLogout</name>
+   <name>TS_TestBDD</name>
    <tag></tag>
    <isRerun>false</isRerun>
    <mailRecipient></mailRecipient>
@@ -10,19 +10,12 @@
    <pageLoadTimeoutDefault>true</pageLoadTimeoutDefault>
    <rerunFailedTestCasesOnly>false</rerunFailedTestCasesOnly>
    <rerunImmediately>true</rerunImmediately>
-   <testSuiteGuid>4ae80adb-e89d-453d-af43-a31af082ca40</testSuiteGuid>
+   <testSuiteGuid>9398acbd-1fbd-4d19-9d56-c0a253fbf2ac</testSuiteGuid>
    <testCaseLink>
-      <guid>71b9e798-4178-4df7-bada-9ab79da61f02</guid>
+      <guid>98ec81d0-041a-4b99-b184-6aafe272a433</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Website/Verify_SuccessfulLogin</testCaseId>
-      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
-   </testCaseLink>
-   <testCaseLink>
-      <guid>ad8eeeae-bc98-49ce-811b-c325748470d8</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/Website/Verify_SuccessfulLogout</testCaseId>
+      <testCaseId>Test Cases/ZExample/TC_TestBDD</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
 </TestSuiteEntity>
