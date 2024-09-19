@@ -17,5 +17,36 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-CustomKeywords.'example.swipeDown'(0)
+Mobile.startApplication('C:\\Users\\1556\\Downloads\\levelup-v8.apk', false)
 
+Mobile.delay(2, FailureHandling.STOP_ON_FAILURE)
+
+Mobile.verifyElementVisible(findTestObject('Object Repository/Object_LevelUp/field_username'), 5)
+
+Mobile.takeScreenshotAsCheckpoint('Sebelum Input Username dan Password', [])
+
+Mobile.delay(2, FailureHandling.STOP_ON_FAILURE)
+
+Mobile.tap(findTestObject('Object Repository/Object_LevelUp/field_username'), 5)
+
+Mobile.setText(findTestObject('Object Repository/Object_LevelUp/input_username'), 'administrator', 5)
+
+Mobile.hideKeyboard()
+
+Mobile.tap(findTestObject('Object Repository/Object_LevelUp/field_password'), 0)
+
+Mobile.setText(findTestObject('Object Repository/Object_LevelUp/input_password'), '1234567890', 5)
+
+Mobile.hideKeyboard()
+
+Mobile.takeScreenshotAsCheckpoint('Seteleah Input Username dan Password', [])
+
+Mobile.delay(2, FailureHandling.STOP_ON_FAILURE)
+
+Mobile.tap(findTestObject('Object Repository/Object_LevelUp/button_Login'), 5)
+
+Mobile.verifyElementVisible(findTestObject('Object Repository/Object_LevelUp/verify_LoginSuccess'), 5)
+
+Mobile.takeScreenshotAsCheckpoint('Berhasil Login', [])
+
+Mobile.delay(2, FailureHandling.STOP_ON_FAILURE)
