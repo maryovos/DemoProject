@@ -28,6 +28,40 @@ import com.kms.katalon.core.exception.StepFailedException
 public class utils {
 	
 	@Keyword
+	def swipeDown(int times) throws StepFailedException {
+
+		for(int i=0 ; i<times ; i++) {
+
+
+			// Get the size of the device screen
+			def driver = MobileDriverFactory.getDriver()
+
+			def dimension = driver.manage().window().getSize()
+
+			int screenWidth = dimension.width
+
+			int screenHeight = dimension.height
+			println("screenWidth = " + screenWidth)
+			println("screenHeight = " + screenHeight)
+
+
+
+			// Define swipe start and end points dynamically
+			int startX = screenWidth / 2
+			int startY = screenHeight * 3/4 // 3/4th down the screen
+			int endX = screenWidth / 2
+			int endY = (screenHeight * 1/4)     // 1/4th up the screen
+
+
+
+
+			// Perform swipe action
+			new TouchAction(driver).press(PointOption.point(startX, startY)).waitAction().moveTo(PointOption.point(endX, endX)).release().perform()
+			
+		}
+	}
+
+	@Keyword
 	def swipeDown_Dropdown(int times) throws StepFailedException {
 
 		for(int i=0 ; i<times ; i++) {
@@ -41,6 +75,8 @@ public class utils {
 			int screenWidth = dimension.width
 
 			int screenHeight = dimension.height
+			println("screenWidth = " + screenWidth)
+			println("screenHeight = " + screenHeight)
 
 
 
@@ -49,6 +85,9 @@ public class utils {
 			int startY = screenHeight * 3/5 // 3/4th down the screen
 			int endX = screenWidth / 2
 			int endY = (screenHeight * 3/5) - 100     // 1/4th up the screen
+
+
+
 
 			// Perform swipe action
 			//			new TouchAction(driver).press(PointOption.point(startX, startY)).waitAction().moveTo(PointOption.point(endX, endX)).release().perform()

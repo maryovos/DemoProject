@@ -29,8 +29,11 @@ class NewTestListener {
 	 * Executes before every test case starts.
 	 * @param testCaseContext related information of the executed test case.
 	 */
-	@BeforeTestCase
-    def beforeTestCase(TestCaseContext testCaseContext) {
-        CucumberGlueGenerator.addDefaultPackages();
-    }
+
+	/*
+	 * @BeforeTestCase def beforeTestCase(TestCaseContext testCaseContext) {
+	 * CucumberGlueGenerator.addDefaultPackages();
+	 * 
+	 * }
+	 */
 }

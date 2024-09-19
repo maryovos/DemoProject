@@ -25,7 +25,7 @@ Mobile.tap(findTestObject('Object Repository/Object_LevelUp/menu_Inventory'), 5)
 
 Mobile.tap(findTestObject('Object Repository/Object_LevelUp/submenu_StockTransfer'), 5)
 
-Mobile.verifyElementVisible(findTestObject('Object Repository/Object_LevelUp/verify_NavigateToStockTransfer'), 5)
+Mobile.verifyElementVisible(findTestObject('Object Repository/Object_LevelUp/verify_NavigateToStockTransfer'), 20)
 
 Mobile.takeScreenshotAsCheckpoint('Berhasil Navigate To Stock Transfer', [])
 
@@ -37,9 +37,9 @@ Mobile.takeScreenshotAsCheckpoint('Sebelum Input Stock Transfer', [])
 
 Mobile.delay(2, FailureHandling.STOP_ON_FAILURE)
 
-Mobile.tap(findTestObject('Object Repository/Object_LevelUp/field_PostingDate'), 5)
+Mobile.tap(findTestObject('Object Repository/Object_LevelUp/field_PostingDate'), 10)
 
-Mobile.tap(findTestObject('Object Repository/Object_LevelUp/button_OK_selectDate'), 5)
+Mobile.tap(findTestObject('Object Repository/Object_LevelUp/button_OK_selectDate'), 10)
 
 Mobile.tap(findTestObject('Object Repository/Object_LevelUp/field_DocDate'), 5)
 
@@ -71,7 +71,7 @@ Mobile.tap(findTestObject('Object Repository/Object_LevelUp/button_AddItem'), 5)
 
 Mobile.tap(findTestObject('Object Repository/Object_LevelUp/field_ItemNumber'), 5)
 
-Mobile.tap(findTestObject('Object Repository/Object_LevelUp/select_SPIDOL_BIRU_BESAR'), 15)
+Mobile.tap(findTestObject('Object Repository/Object_LevelUp/select_SPIDOL_BIRU_BESAR'), 25)
 
 Mobile.setText(findTestObject('Object Repository/Object_LevelUp/field_Qty'), '7', 5)
 
@@ -83,17 +83,17 @@ Mobile.tap(findTestObject('Object Repository/Object_LevelUp/select_UNIT'), 5)
 
 Mobile.delay(2, FailureHandling.STOP_ON_FAILURE)
 
-CustomKeywords.'utils.swipeDown_Dropdown'(1)
+CustomKeywords.'utils.swipeDown'(1)
 
 Mobile.delay(2, FailureHandling.STOP_ON_FAILURE)
 
-Mobile.tap(findTestObject('Object Repository/Object_LevelUp/button_saveItem'), 5)
+Mobile.tap(findTestObject('Object_LevelUp/button_saveItem (1)'), 5)
 
 Mobile.takeScreenshotAsCheckpoint('Setelah Input Item', [])
 
 Mobile.delay(2, FailureHandling.STOP_ON_FAILURE)
 
-Mobile.tap(findTestObject('Object Repository/Object_LevelUp/button_Next (1)'), 5)
+Mobile.tap(findTestObject('Object_LevelUp/button_Next (1)'), 5)
 
 Mobile.takeScreenshotAsCheckpoint('Sebelum Input Journal', [])
 
@@ -111,7 +111,7 @@ Mobile.takeScreenshotAsCheckpoint('Setelah Input Journal', [])
 
 Mobile.delay(2, FailureHandling.STOP_ON_FAILURE)
 
-not_run: Mobile.tap(findTestObject('Object Repository/Object_LevelUp/button_Save'), 5)
+Mobile.tap(findTestObject('Object Repository/Object_LevelUp/button_Save'), 5)
 
 Mobile.delay(10, FailureHandling.STOP_ON_FAILURE)
 

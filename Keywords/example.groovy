@@ -19,15 +19,12 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable
 
 public class example {
-	
+
 	@Keyword
 	def swipeDown(int times){
 		for(def iteration : times) {
-	
-					Mobile.swipe(180, 400, 180, 200, FailureHandling.STOP_ON_FAILURE)
-	
+
+			Mobile.swipe(180, 400, 180, 200, FailureHandling.STOP_ON_FAILURE)
 		}
 	}
-	
-	
 }

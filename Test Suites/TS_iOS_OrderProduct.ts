@@ -15,7 +15,7 @@
       <guid>3df51736-f7c3-4f80-a961-6dd7bba0365a</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/TC_OrderProduct</testCaseId>
+      <testCaseId>Test Cases/iOS/TC_OrderProduct</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
 </TestSuiteEntity>

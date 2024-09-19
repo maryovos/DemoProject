@@ -53,7 +53,7 @@ class step_LoginLogout {
 		WebUI.openBrowser(null)
 		WebUI.navigateToUrl(GlobalVariable.url_login)
 		WebUI.delay(2)
-		WebUI.takeScreenshot("Navigate to CMS Login Page Success", FailureHandling.STOP_ON_FAILURE)
+		
 	}
 
 	@When("User enter username valid")
@@ -62,7 +62,7 @@ class step_LoginLogout {
 		WebUI.waitForElementPresent(findTestObject('Object Repository/Website/Login/txt_username'), 10, FailureHandling.STOP_ON_FAILURE)
 		WebUI.setText(findTestObject('Object Repository/Website/Login/txt_username'), GlobalVariable.username_web)
 		WebUI.delay(2)
-		WebUI.takeScreenshot("Enter username valid Success", FailureHandling.STOP_ON_FAILURE)
+		
 	}
 
 	@When("User enter password valid")
@@ -71,7 +71,7 @@ class step_LoginLogout {
 		WebUI.waitForElementPresent(findTestObject('Object Repository/Website/Login/txt_password'), 10, FailureHandling.STOP_ON_FAILURE)
 		WebUI.setText(findTestObject('Object Repository/Website/Login/txt_password'), GlobalVariable.password_web)
 		WebUI.delay(2)
-		WebUI.takeScreenshot("Enter password valid Success", FailureHandling.STOP_ON_FAILURE)
+		
 	}
 
 	@When("User click button login")
@@ -87,6 +87,6 @@ class step_LoginLogout {
 	def I_verify_the_status_in_step() {
 
 		WebUI.verifyElementPresent(findTestObject('Website/Login/verify_loginSuccess'), 20, FailureHandling.STOP_ON_FAILURE)
-		WebUI.takeScreenshot("Success Login", FailureHandling.STOP_ON_FAILURE)
+		
 	}
 }
