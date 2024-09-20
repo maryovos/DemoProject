@@ -23,10 +23,12 @@ import com.kms.katalon.core.mobile.keyword.internal.MobileDriverFactory as Mobil
 import io.appium.java_client.TouchAction as TouchAction
 import io.appium.java_client.touch.offset.PointOption as PointOption
 import com.kms.katalon.core.exception.StepFailedException
+import io.appium.java_client.touch.WaitOptions
+import java.time.Duration
 
 
 public class utils {
-	
+
 	@Keyword
 	def swipeDown(int times) throws StepFailedException {
 
@@ -51,12 +53,22 @@ public class utils {
 			int startY = screenHeight * 3/4 // 3/4th down the screen
 			int endX = screenWidth / 2
 			int endY = (screenHeight * 1/4)     // 1/4th up the screen
+			long duration = 1000 // Duration of the swipe in milliseconds
 
 
+			// Create a new TouchAction instance
+			TouchAction action = new TouchAction(driver)
+			
+			// Perform the swipe action with a wait
+			action.press(PointOption.point(startX, startY))
+				  .waitAction(WaitOptions.waitOptions(Duration.ofMillis(duration))) // Set duration here
+				  .moveTo(PointOption.point(endX, endY)) // Corrected endY
+				  .release()
+				  .perform()
 
 
 			// Perform swipe action
-			new TouchAction(driver).press(PointOption.point(startX, startY)).waitAction().moveTo(PointOption.point(endX, endX)).release().perform()
+			// new TouchAction(driver).press(PointOption.point(startX, startY)).waitAction().moveTo(PointOption.point(endX, endX)).release().perform()
 			
 		}
 	}

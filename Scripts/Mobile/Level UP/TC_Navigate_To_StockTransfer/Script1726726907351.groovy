@@ -29,4 +29,3 @@ Mobile.verifyElementVisible(findTestObject('Object Repository/Object_LevelUp/ver
 
 Mobile.takeScreenshotAsCheckpoint('Berhasil Navigate To Stock Transfer', [])
 
-Mobile.delay(2, FailureHandling.STOP_ON_FAILURE)
