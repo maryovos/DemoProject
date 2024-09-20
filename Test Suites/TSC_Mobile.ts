@@ -15,7 +15,7 @@
             <runConfigurationId>TestCloud</runConfigurationId>
          </configuration>
          <runEnabled>true</runEnabled>
-         <testSuiteEntity>Test Suites/TS_Mobile</testSuiteEntity>
+         <testSuiteEntity>Test Suites/TS_Login KAF</testSuiteEntity>
       </TestSuiteRunConfiguration>
    </testSuiteRunConfigurations>
 </TestSuiteCollectionEntity>

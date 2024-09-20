@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC_Navigate_To_StockTransfer_TestOps</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>1f87ea2e-d70a-436a-a9ff-9be98d194bb0</testCaseGuid>
+</TestCaseEntity>
