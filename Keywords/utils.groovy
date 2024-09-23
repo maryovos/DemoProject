@@ -58,18 +58,17 @@ public class utils {
 
 			// Create a new TouchAction instance
 			TouchAction action = new TouchAction(driver)
-			
+
 			// Perform the swipe action with a wait
 			action.press(PointOption.point(startX, startY))
-				  .waitAction(WaitOptions.waitOptions(Duration.ofMillis(duration))) // Set duration here
-				  .moveTo(PointOption.point(endX, endY)) // Corrected endY
-				  .release()
-				  .perform()
+					.waitAction(WaitOptions.waitOptions(Duration.ofMillis(duration))) // Set duration here
+					.moveTo(PointOption.point(endX, endY)) // Corrected endY
+					.release()
+					.perform()
 
 
 			// Perform swipe action
 			// new TouchAction(driver).press(PointOption.point(startX, startY)).waitAction().moveTo(PointOption.point(endX, endX)).release().perform()
-			
 		}
 	}
 

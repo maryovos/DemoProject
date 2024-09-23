@@ -51,3 +51,7 @@ Mobile.takeScreenshotAsCheckpoint('Berhasil Login', [])
 
 Mobile.delay(2, FailureHandling.STOP_ON_FAILURE)
 
+Mobile.useFingerprint(0, FailureHandling.STOP_ON_FAILURE)
+
+CustomKeywords.'swipe.swipeDown'(5)
+
