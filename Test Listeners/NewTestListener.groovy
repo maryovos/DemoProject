@@ -37,23 +37,5 @@ class NewTestListener {
 	 * 
 	 * }
 	 */
-	@BeforeTestSuite
-	def setup() {
-		// Desired capabilities for mobile testing
-		DesiredCapabilities capabilities = new DesiredCapabilities()
-
-		// Add the capability to auto-grant permissions
-		capabilities.setCapability("autoGrantPermissions", true)
-
-	}
 	
-	@BeforeTestCase
-	def setupp() {
-		// Desired capabilities for mobile testing
-		DesiredCapabilities capabilities = new DesiredCapabilities()
-
-		// Add the capability to auto-grant permissions
-		capabilities.setCapability("autoGrantPermissions", true)
-
-	}
 }
